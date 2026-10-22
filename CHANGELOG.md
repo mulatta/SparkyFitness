@@ -1,5 +1,45 @@
 # Changelog
 
+## [1.10.0](https://github.com/CodeWithCJ/SparkyFitness/compare/v1.9.0...v1.10.0) (2026-10-22)
+
+
+### Features
+
+* **mobile:** add check-in reminder settings ([5634ba4](https://github.com/CodeWithCJ/SparkyFitness/commit/5634ba445c8f2308e02a13d8a06ceb31df7afbb1))
+* **mobile:** daily mood check-in reminders ([c7860d9](https://github.com/CodeWithCJ/SparkyFitness/commit/c7860d9c45349249e43f3ca26d3a8f82f517ebb7))
+* **mobile:** keep check-in reminders in sync and open the check-in on tap ([fe0a4ff](https://github.com/CodeWithCJ/SparkyFitness/commit/fe0a4ff47f283175898cbdd7c7e0aeb9caa6b006))
+* **mobile:** offer daily check-in reminders after the first check-in ([3ee01d1](https://github.com/CodeWithCJ/SparkyFitness/commit/3ee01d178bfe74cbf1f96e9817e1f2877ba1f49e))
+* **mobile:** read mindfulness sessions from Health Connect ([1b003c8](https://github.com/CodeWithCJ/SparkyFitness/commit/1b003c8d19ba225a4fdc5bb0dcd07f53d551862a)), closes [#2836](https://github.com/CodeWithCJ/SparkyFitness/issues/2836)
+* **mobile:** schedule daily mood check-in reminders ([b860b67](https://github.com/CodeWithCJ/SparkyFitness/commit/b860b67372187269a325b1dda94013c475ec2013))
+* **mobile:** time-weighted daily heart rate average on Health Connect ([b56c46c](https://github.com/CodeWithCJ/SparkyFitness/commit/b56c46cfe13391b5247781168b77067e9ed1b761))
+* **symptoms:** track impact over time next to severity ([23846b9](https://github.com/CodeWithCJ/SparkyFitness/commit/23846b963c0a7eff09912f166163a37b2fd5276d))
+* **symptoms:** track impact over time next to severity ([e5441a2](https://github.com/CodeWithCJ/SparkyFitness/commit/e5441a23e712eb29e247cfc250a7362607cd850d)), closes [#2960](https://github.com/CodeWithCJ/SparkyFitness/issues/2960)
+
+
+### Bug Fixes
+
+* **db:** finish renaming duplicate custom categories before the uniqu… ([dd87618](https://github.com/CodeWithCJ/SparkyFitness/commit/dd87618993049da93593b05d948bc120427ac781))
+* **db:** finish renaming duplicate custom categories before the unique index ([f8accb6](https://github.com/CodeWithCJ/SparkyFitness/commit/f8accb69070cb453ad7e71a6186b63032fc64dcb)), closes [#3041](https://github.com/CodeWithCJ/SparkyFitness/issues/3041)
+* **health-data:** keep fields the user edited when a workout is re-sent ([83dc8fc](https://github.com/CodeWithCJ/SparkyFitness/commit/83dc8fcba67b886e773b463c3c5d5d96306345fa)), closes [#2841](https://github.com/CodeWithCJ/SparkyFitness/issues/2841)
+* **health-data:** leave manual_fields NULL until a field is edited ([970c34f](https://github.com/CodeWithCJ/SparkyFitness/commit/970c34fdc5a1860e9f9891c738840f0981664b6d))
+* **mobile:** ask for notification permission before turning notifications on ([ef3d32e](https://github.com/CodeWithCJ/SparkyFitness/commit/ef3d32e53354bb1569c23a25b65e1de6b1464030))
+* **mobile:** make check-in reminder settings accessible and explain denied permission ([07998bd](https://github.com/CodeWithCJ/SparkyFitness/commit/07998bdc07acac521776c5bc77065b85025e4960))
+* **mobile:** never let the reminder offer hold up leaving the check-in ([f9f2b0d](https://github.com/CodeWithCJ/SparkyFitness/commit/f9f2b0dbc6b92fbad4ce13e5342655d193f34093))
+* **mobile:** offer check-in reminders after a new check-in on every server ([1438581](https://github.com/CodeWithCJ/SparkyFitness/commit/14385818c5a0ab319f6929b48e966d2cfa775680))
+* **mobile:** offer check-in reminders only after a new one-entry mood ([128e4ec](https://github.com/CodeWithCJ/SparkyFitness/commit/128e4ec00c3860f773fdb023f206bd8bede1f17d))
+* **mobile:** re-read mindfulness sessions entered for an earlier day ([8455c26](https://github.com/CodeWithCJ/SparkyFitness/commit/8455c2631ed8c1db4c4cee425cd0df0518a9c024))
+* **mobile:** register the check-in tap listener once ([9ef9035](https://github.com/CodeWithCJ/SparkyFitness/commit/9ef90353c78ea9fdf25f4744520e4b4aee06d533))
+* **mobile:** request new HealthKit types on iOS without a permission version bump ([5758899](https://github.com/CodeWithCJ/SparkyFitness/commit/57588993b66a23870ad08b364799f96e5fe1cfef))
+* **mobile:** send duration as value so the server accepts mindfulness sessions ([84428fc](https://github.com/CodeWithCJ/SparkyFitness/commit/84428fcf83c32e52fb2088153493db8457c1faf7))
+* **server:** detect a vanished holder of the startup schema lock ([55069ec](https://github.com/CodeWithCJ/SparkyFitness/commit/55069ec71669f70bdacb87d9184f1211fddd55f5))
+* **server:** drop a vanished holder of the startup schema lock within a minute (it otherwise blocked the next boot for up to 2 hours) ([0af000f](https://github.com/CodeWithCJ/SparkyFitness/commit/0af000f0f5c79f40ae2b7011dc8eab1379803d47))
+
+
+### Documentation
+
+* **mobile:** describe check-in reminders ([2c8b4b2](https://github.com/CodeWithCJ/SparkyFitness/commit/2c8b4b23010dfd8d69ac7f40e0cf71d3e60a1a07))
+* **server:** note that a running statement finishes before the schema lock is released (review feedback) ([283b718](https://github.com/CodeWithCJ/SparkyFitness/commit/283b71899c47c4092cbc7d88dfb2f2f97c5d27d7))
+
 ## [1.9.0](https://github.com/CodeWithCJ/SparkyFitness/compare/v1.8.0...v1.9.0) (2026-10-21)
 
 
